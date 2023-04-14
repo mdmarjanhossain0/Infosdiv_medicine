@@ -1,0 +1,156 @@
+<style>
+
+  .search-sort-allOffers {
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort-all-offers {
+  display: flex;
+  gap: 1rem;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  color: var(--dark-gray);
+  margin: 10px 0px 0 9px;
+  font-size: 1.1rem;
+}
+
+.search-text {
+  width: 100%;
+  padding: 10px 0 10px 33px;
+  color: var(--dark-gray);
+  border: none;
+  outline: none;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .search-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .search-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .search-sort-allOffers {
+    display: block;
+  }
+  .search-text {
+    width: 450px;
+  }
+
+  .sort-all-offers {
+    width: 450px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: space-between;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .search-text {
+    width: 100%;
+  }
+}
+
+.sort-by {
+  position: relative;
+}
+
+.sort-by-button {
+  cursor: pointer;
+}
+
+.sort-by-list {
+  background-color: var(--white);
+  list-style-type: none;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 2rem;
+  left: -6rem;
+  display: none;
+}
+
+.sort-by-list > li {
+  cursor: pointer;
+  margin: 0.3rem 0;
+}
+
+.show-sort-by-list {
+  display: block;
+}
+
+.all-offers-menu {
+  position: relative;
+}
+
+.all-offers-menu-button {
+  cursor: pointer;
+}
+
+.all-offers-menu-list {
+  background-color: var(--white);
+  list-style-type: none;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 2rem;
+  left: -4.7rem;
+  display: none;
+}
+
+.all-offers-menu-list > li {
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.all-offers-menu-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.show-all-offers-menu-list {
+  display: block;
+}
+
+.fa-sort-down {
+  padding-left: 0.2rem;
+}
+
+@media screen and (max-width: 562px) {
+  .sort-by-list {
+    left: 0rem;
+  }
+}
+
+</style>

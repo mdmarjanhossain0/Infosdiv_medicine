@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    .top p {
+        margin: 0px !important;
+        padding: 0px !important;
+        font-size: 15px;
+    }
+
+    .subscript {
+        font-size: 1rem !important;
+    }
+
+    h3 {
+        background: #C1C1C1;
+        border-radius: 5px;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        margin-left: 1.7rem !important;
+    }
+    h5 {
+        text-decoration: underline;
+    }
+</style>
+
+
+
+
+
+
+
+
+{% block metatags %}
+<title>{{ medicine.name }}</title>
+<meta name="keywords" content="">
+<meta name="description" content="Price : {{ medicine.price }} BDT. Weight: {{ medicine.weight }}. Generic : {{ medicine.generic_name }}. Manufacture : {{ medicine.manufacturer_name }}. Porpose : {{ medicine.generic.introduction }}">
+<meta name="author" content="Md Marjan Hossain">
+{% endblock %}
+<div class="main-contain">
+    <br>
+
+
+
+    <div class="top">
+        <h1><b>{{ medicine.name }} </b> <span class="subscript">{{ medicine.weight }}</span></h1>
+        <p class="text-line">Price : {{ medicine.price }} BDT</p>
+        <p class="text-line">Generic : {{ medicine.generic_name }}</p>
+        <p class="text-line">Manufacture : {{ medicine.manufacturer_name }}</p>
+    </div>
+    {% if medicine.generic.uses_for %}
+      <div>
+        <h3>Uses For</h3>
+        <div class="description">{{ medicine.generic.uses_for|safe }}</div>
+    </div>
+    {% endif %}
+    {% if medicine.generic.introduction %}
+      <div>
+        <h3>Perpose</h3>
+        <div class="description">{{ medicine.generic.introduction|safe }}</div>
+    </div>
+    {% endif %}
+
+    {% if medicine.generic.dose %}
+      <div>
+        <h3>Dose</h3>
+        <div class="description">{{ medicine.generic.dose|safe }}</div>
+    </div>
+    {% endif %}
+
+
+
+
+
+
+    {% if medicine.generic.therapeutic_class %}
+      <div>
+        <h3>Therapeutic</h3>
+        <div class="description">{{ medicine.generic.therapeutic_class|safe }}</div>
+    </div>
+    {% endif %}
+
+
+    {% if medicine.generic.side_effect %}
+      <div>
+        <h3>Side Effect</h3>
+        <div class="description">{{ medicine.generic.side_effect|safe }}</div>
+        {% if medicine.acute_overdose %}
+          <h5>Over Dose Effect</h5>
+        <div class="description">{{ medicine.generic.acute_overdose|safe }}</div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if medicine.generic.precaution %}
+      <div>
+        <h3>Warning</h3>
+        <div class="description">{{ medicine.generic.precaution|safe }}</div>
+        {% if medicine.generic.pregnancy_lactation_use %}
+          <h5>Pregnancy</h5>
+        <div class="description">{{ medicine.generic.pregnancy_lactation_use|safe }}</div>
+        {% endif %}
+        {% if medicine.generic.special_warning %}
+          <h5>Special Warning</h5>
+        <div class="description">{{ medicine.generic.special_warning|safe }}</div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if medicine.generic.storage_condition %}
+      <div>
+        <h3>Storage Condition</h3>
+        <div class="description">{{ medicine.generic.storage_condition|safe }}</div>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,168 @@
+.my-account {
+  background-color: var(--background-color);
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  max-width: 940px;
+  width: 100%;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: block;
+}
+
+.my-account-header {
+  padding-top: 3.5rem;
+  padding-left: 1.5rem;
+  margin-right: 25px;
+}
+
+.my-account-title {
+  text-align: center;
+}
+.my-account-activity {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-account-activity-left > h3 {
+  color: var(--dark-gray);
+}
+
+.my-account-activity-left > p {
+  color: var(--very-light-gray-2);
+}
+
+.my-account-activity-right {
+  color: var(--dark-gray);
+  position: relative;
+}
+
+.my-account-activity-right > section {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.my-account-activity-right-list {
+  width: 150px;
+  position: absolute;
+  background-color: var(--white);
+  list-style-type: none;
+  box-shadow: var(--box-shadow);
+  padding: 0.6rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  top: 2rem;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+.my-account-activity-right > ul > li {
+  margin-bottom: 0.7rem;
+}
+
+.open-activity-dropdown {
+  display: block;
+}
+
+.my-account-activity-banner {
+  background-color: #ecf0fa;
+  margin: 1.3rem;
+  height: 125px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.my-account-activity-banner > div {
+  font-size: 1.2rem;
+}
+
+.my-account-activity-banner > div > p {
+  color: var(--dark-gray);
+  margin-bottom: 0.7rem;
+}
+
+.my-account-activity-banner > div > h5 {
+  color: var(--very-light-gray-2);
+  margin-bottom: 0.7rem;
+}
+
+.my-account-activity-banner > div > h6 {
+  color: var(--very-light-gray-2);
+  font-size: 1.4rem;
+}
+
+.my-account-activity-survey {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.survey-img {
+  height: 100px;
+  width: 90px;
+  border-radius: 15px;
+}
+
+.activity-survey-top-right {
+  position: absolute;
+  top: 0.6rem;
+  right: 1.5rem;
+  display: flex;
+  font-size: 10px;
+}
+
+.activity-survey-top-right > p {
+  margin-left: 0.3rem;
+  color: #8ca0ba;
+  background-color: #f4f6fc;
+  font-weight: 700;
+  padding: 0.4rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.activity-survey-left-texts {
+  margin-left: 5px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.activity-survey-left-texts > h4 {
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+.activity-survey-left-texts > p {
+  color: var(--very-light-gray-2);
+}
+
+
+.account-tabs {
+  margin-right: 15px;
+  margin-left: 15px;
+}

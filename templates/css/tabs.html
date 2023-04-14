@@ -1,0 +1,64 @@
+<style>
+
+  .tabs {
+  width: 100%;
+  background-color: var(--white);
+  margin-top: 1.8rem;
+  padding: 8px 7px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--box-shadow-2);
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-btn {
+  color: var(--dark-gray);
+  background: var(--very-light-gray-1);
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 0.97rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: var(--box-shadow-2);
+  /* width: 300px; */
+  flex: 25%;
+}
+
+.select-tab {
+  color: var(--white);
+  background: var(--light-green);
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 0.97rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: var(--box-shadow-2);
+  /* width: 300px; */
+  flex: 25%;
+}
+
+@media screen and (max-width: 807px) {
+  .tabs-btn {
+    width: 100%;
+  }
+}
+
+</style>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "K2D", sans-serif;
+}
+
+:root {
+    --background-color: #f4f6fc;
+    --very-light-gray-1: #e5e7eb;
+    --very-light-gray-2: #8ca0ba;
+    --dark-gray: #324d67;
+    --white: #ffffff;
+    --light-green: #32d276;
+    --dark-green: #188c43;
+    --dark-green-2: hsla(146, 75%, 39%, 0.744);
+    --light-orange: #feeed5;
+    --dark-orange: #f8ac2f;
+    --light-cyan: #d2f1f7;
+    --dark-cyan: #1eb9d7;
+    --light-red: #ffd8ce;
+    --dark-red: #e7553a;
+    --box-shadow: 0 5px 15px rgba(10, 134, 83, 0.2);
+    --gradient-to: #334d6e;
+    --gradient-from: #1e2f45;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: var(--background-color);
+    margin: 0px 200px;
+}
+
+
+
+
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /*margin-top: 57px;*/
+}
+
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(35px, auto);
+    margin-top: 25px;
+}
+
+
+.nav-bar>button {
+    justify-content: space-between;
+}
+
+.main-contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card {
+    display: grid;
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+    height: 150px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.offer-card>.offer-card-title {
+    background: red;
+    grid-column: 2 / 6;
+}
+
+.offer-card>.offer-card-body {
+    background: chocolate;
+    grid-column: 2 / 6;
+}
+
+
+.offer-card>.offer-card-footer {
+    background: green;
+    grid-column: 1 / 6;
+}
+
+
+.offer-card>.offer-card-side-bar {
+    background: blue;
+    grid-row: 1 / 3;
+}
+
+
+.offer-manager {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.offer-manager>.offer-manager-search-bar {
+    width: 70%;
+    margin: 3px;
+}
+
+.offer-manager>.offer-manager-filtering {
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    /* .container {
+        margin: 0px 15px;
+    } */
+
+    .offer-manager {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .offer-manager>.offer-manager-search-bar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .offer-manager>.offer-manager-filtering {
+        width: 100%;
+        justify-content: space-between;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+}

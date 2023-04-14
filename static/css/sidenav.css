@@ -1,0 +1,110 @@
+.sidenav-wrapper {
+  background-color: #ffffff9a;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  max-width: 940px;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 3s ease;
+  text-align: center;
+  color: var(--light-green);
+  width: 100%;
+}
+
+.sidenav a {
+  padding: 8px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--dark-gray);
+  display: block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--light-green);
+}
+
+.sidenav a:hover {
+  color: var(--very-light-gray-2);
+}
+
+.sidenav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--very-light-gray-2);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.sidenav-header > button {
+  background: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  border-color: var(--light-green);
+}
+
+.fa-arrow-trend-up {
+  padding-right: 5px;
+}
+/* .sidenav a {
+  font-weight: bold;
+  font-size: 1rem;
+} */
+
+
+
+
+.sidebar-item {
+  display: inline-block;
+  text-align: left;
+  margin-right: 5%;
+  color: var(--light-green);
+}
+
+
+
+.fa-xmark {
+  color: var(--light-green);
+}
+
+
+
+
+
+
+
+.closebtn-background {
+  background: var(--light-green);
+  color: var(--light-green);
+  background-color: var(--light-green);
+}

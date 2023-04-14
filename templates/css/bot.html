@@ -1,0 +1,40 @@
+<style>
+  .bot-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 3s ease-in-out;
+}
+
+.bot-container div {
+    text-align: center;
+}
+
+.bot-image {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.bot-container > p {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: var(--light-green);
+
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .bot-image {
+    width: 70%;
+  }
+
+  .bot-container > p {
+    font-size: 2rem;
+  }
+}
+
+</style>
