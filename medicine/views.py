@@ -46,15 +46,18 @@ def home(request):
     return render(request, "home.html", context)
 
 
-def details(request, pk, slug):
+def details(request, slug):
     context = {}
-    medicine = get_object_or_404(Medicine, pk=pk, slug=slug)
+    medicines = Medicine.objects.filter(slug=slug)
+    if len(medicines) > 0:
+        medicine = medicines[0]
+    else:
+        return HttpResponse("Not Found", status=404)
     context["medicine"] = medicine
     return render(request, "medicine_details.html", context)
 
 
 def privacy_policy_view(request):
-
     return render(request, "privacy_policy.html", context={})
 
 

@@ -17,7 +17,7 @@ sitemaps = {"medicine": MedicineSiteMap}
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home, name="home"),
-    path("<pk>/<slug>", details, name="details"),
+    path("<slug>", details, name="details"),
     path("privacy-policy", privacy_policy_view, name="privacy-policy"),
     path(
         "sitemap.xml",
